@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+<style>
+    @import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+    body {
+        background-color: #201f20;
+        font-family: "Press Start 2P", sans-serif;
+    }
+    
+    h1 {
+        color: white;
+    }
+    
+    .box {
+        background-color: white;
+        width: 150px;
+        height: 150px;
+        font-size: 70px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .container {
+        display: flex;
+        text-align: center;
+    }
+    
+    input {
+        padding: 35px;
+        font-size: 44px;
+        width: 200px;
+        text-align: center;
+        border: 2px solid white;
+        background-color: #201f20;
+        color: white;
+    }
+    
+    .btn {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 50px;
+        font-size: 24px;
+    }
+    
+    .main {
+        padding: 70px 0px;
+        font-size: 24px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .txt {
+        list-style: none;
+    }
+    
+    .txt li {
+        color: white;
+        float: left;
+        font-size: 24px;
+    }
+    
+    .again {
+        padding: 15px 40px;
+        font-size: 25px;
+    }
+    
+    .ins {
+        float: right;
+        color: white;
+    }
+    
+    .sqa {
+        background-color: white;
+        height: 10px;
+        position: absolute;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <button class="again">Again!</button>
+        <p class="ins">Choose Between 1 & 20</p>
+        <h1 style="text-align: center">GUESS MY NUMBER!</h1>
+    </div>
+    <hr />
+    <div class="ques">
+        <div class="box"><span class="mm">?</span></div>
+        <div class="sqa"></div>
+    </div>
+    <div class="container">
+        <div class="main">
+            <input id="guess" type="number" /><br /><br />
+            <button class="btn">Check!</button>
+        </div>
+        <div class="main">
+            <ul class="txt">
+                <li id="first">Start guessing ...</li>
+                <br /><br /><br />
+                <li>🎈 Score: <span class="score">20</span></li>
+                <br />
+                <li>💪 Highscore: <span class="high">0</span></li>
+            </ul>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
